@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+  Name: Nikhil Alapati
+  Date: 5/8/2020
+  Section: CSE 154 A/AC
+  This the the main page for lyric look up
+  this is the main structure for the website
+-->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="index.js"></script>
+  <title>Song Lyric Lookup</title>
+</head>
+
+<body>
+  <div id="top-header">
+    <h1>Song Lyric Lookup</h1>
+    <h2>Just type in the name of the artist and the song name to get lyrics</h2>
+  </div>
+  <div id="search">
+    <section id="search-boxes">
+      <span class="input-holder">
+        Enter Artist Name
+        <input type="text" name="Artist" class="input" id="input-artist" placeholder="Eg: Queen">
+      </span>
+      <span class="input-holder">
+        Enter Song Name
+        <input type="text" name="song" class="input" id="input-song"
+        placeholder="Eg: Bohemian Rhapsody">
+      </span>
+    </section>
+    <p id="error" class="hidden">Artist/Song Name Not Found please Check for typos</p>
+    <p id="submit">
+      <button id="submit-btn">Submit!</button>
+    </p>
+  </div>
+  <div id="lyric-content">
+    <section id="song-lyrics"></section>
+  </div>
+  <footer>
+    <p>The following program uses the lyrics.ovh API found at https://lyricsovh.docs.apiary.io/#</p>
+  </footer>
+</body>
+
+</html>

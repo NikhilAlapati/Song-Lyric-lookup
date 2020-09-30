@@ -1,0 +1,51 @@
+/*
+  Name: Nikhil Alapati
+  Date: 5/8/2020
+  Section: CSE 154 A/AC
+  This is a my own sytles/design for the index.html
+*/
+#top-header h1,
+h2,
+#search-boxes,
+#submit,
+#song-lyrics,
+#lyric-content,
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+#top-header {
+  background-color: #2a9d8f;
+}
+
+body {
+  background-color: #264653;
+  color: #e76f51;
+  margin: 0;
+}
+
+#search-boxes {
+  padding-top: 5%;
+}
+
+.input {
+  margin: 5%;
+}
+
+.input-holder,
+#error {
+  text-align: center;
+}
+
+#song-lyrics {
+  width: 50vw;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#error {
+  justify-content: center;
+}
